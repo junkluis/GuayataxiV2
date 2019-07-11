@@ -15,6 +15,12 @@ public class ConductorTest {
     public void asignarTaxi() {
         boolean asignacionExitosa = false;
         Taxi taxi = new Taxi("GXZ093", "Ferarari", 1);
-        conductorPrueba.asignarTaxi(taxi); 
+        try {
+            conductorPrueba.asignarTaxi(taxi);
+            asignacionExitosa = true;
+        } catch (AssertionError error){
+            asignacionExitosa = false;
+        }
+        assertEquals(true, asignacionExitosa);        
     }
 }
