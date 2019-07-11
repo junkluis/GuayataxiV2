@@ -1,3 +1,5 @@
+package com.example.guayataxiv2;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -6,8 +8,6 @@ import guayataxi.Billetera;
 import guayataxi.Ubicacion;
 
 import static org.junit.Assert.*;
-
-package com.example.guayataxiv2;
 
 public class ClienteTest {
 
