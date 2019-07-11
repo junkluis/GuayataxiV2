@@ -14,7 +14,7 @@ public class ConductorTest {
     @Before
     public void iniciarPruebas(){
         conductor = new Conductor("Carlos Veintemilla", "0705786564");
-        taxi = new Taxi("asadasa", "marca", "aaa");
+        taxi = new Taxi("asadasa", "marca", 1);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class ConductorTest {
 
     @Test
     public void asignarTaxiLLeno(){
-        Taxi taxiNuevo = new Taxi("asadasa", "marca", "aaa");
+        Taxi taxiNuevo = new Taxi("asadasa", "marca", 1);
         boolean estado = conductor.asignarUnTaxi(taxiNuevo);
 
         assertEquals(true, estado);
@@ -47,7 +47,7 @@ public class ConductorTest {
 
     @Test
     public void cedulaValida(){
-        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "0705786564")
+        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "0705786564");
         boolean estado = nuevoCon.verificarCedula();
 
         assertEquals(true, estado);
@@ -55,7 +55,7 @@ public class ConductorTest {
 
     @Test
     public void cedulaInvalidaTamaño(){
-        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "070578")
+        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "070578");
         boolean estado = nuevoCon.verificarCedula();
 
         assertEquals(false, estado);
@@ -63,7 +63,7 @@ public class ConductorTest {
 
     @Test
     public void cedulaInvalidaPrincipio(){
-        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "1705786564")
+        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "1705786564");
         boolean estado = nuevoCon.verificarCedula();
 
         assertEquals(false, estado);
