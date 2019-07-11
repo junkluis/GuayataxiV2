@@ -30,7 +30,7 @@ public class ClienteTest {
     
     @Test
     public void ubicarCasa() {
-        boolean asignacionExitosa = false
+        boolean asignacionExitosa = false;
         try {
             clientePrueba.registrarCasa(33227, 3328217, 337226);
             asignacionExitosa = true;
