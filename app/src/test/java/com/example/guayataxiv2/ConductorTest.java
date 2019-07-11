@@ -44,4 +44,28 @@ public class ConductorTest {
 
         assertEquals(false, estado);
     }
+
+    @Test
+    public void cedulaValida(){
+        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "0705786564")
+        boolean estado = nuevoCon.verificarCedula();
+
+        assertEquals(true, estado);
+    }
+
+    @Test
+    public void cedulaInvalidaTamaño(){
+        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "070578")
+        boolean estado = nuevoCon.verificarCedula();
+
+        assertEquals(false, estado);
+    }
+
+    @Test
+    public void cedulaInvalidaPrincipio(){
+        Conductor nuevoCon = new Conductor("Carlos Veintemilla", "1705786564")
+        boolean estado = nuevoCon.verificarCedula();
+
+        assertEquals(false, estado);
+    }
 }
