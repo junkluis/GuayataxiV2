@@ -37,7 +37,7 @@ public class ClienteTest {
     @Test
     public void testRegistrarCasa(){
         Ubicacion miCasa = null;
-        miCasa = clientePrueba.registrarCasa(-2.1,16.5,500)
-        assertNotEquals(null,miCasa)
+        miCasa = clientePrueba.registrarCasa(-2.1,16.5,500);
+        assertNotEquals(null,miCasa);
     }
 }
