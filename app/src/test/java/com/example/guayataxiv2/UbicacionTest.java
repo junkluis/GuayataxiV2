@@ -8,6 +8,11 @@ public class UbicacionTest {
     u2 = new Ubicacion(340, 435, 34);
     u3 = new Ubicacion(132, 12, 48);
     u3 = new Ubicacion(12, 443, 67);
+    
+    u1.setDescripcion("Guayaquil");
+    u2.setDescripcion("Milagro");
+    u3.setDescripcion("Guayaquil");
+    u4.setDescripcion("Quito");
   }
   
   public void verPrecios() {
@@ -19,8 +24,8 @@ public class UbicacionTest {
     r4 = u4.calcularPrecio();
     
     intEquals(2, r1);
-    intEquals(5, r1);
-    intEquals(10, r1);
-    intEquals(15, r1);
+    intEquals(5, r2);
+    intEquals(10, r3);
+    intEquals(15, r4);
   }
 }
