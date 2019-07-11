@@ -19,14 +19,14 @@ public class ClienteTest {
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(2);
         billeteraPrueba.agregarFondos(10);
-        clientePrueba = new Cliente('Yesenia Murillo','0913852890',billeteraPrueba);
+        clientePrueba = new Cliente("Yesenia Murillo","0913852890",billeteraPrueba);
     }
 
     @Test
     public void crearCliente(){
         boolean creacionExito = false;
         try{
-            Cliente clienteByron = new Cliente('Byron Povea','1726273531',billeteraPrueba);
+            Cliente clienteByron = new Cliente("Byron Povea","1726273531",billeteraPrueba);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -37,7 +37,7 @@ public class ClienteTest {
     @Test
     public void testRegistrarCasa(){
         Ubicacion miCasa = null;
-        miCasa = clientePrueba.registrarCasa(-2.1,16.5,500);
+        miCasa = clientePrueba.registrarCasa(-2.1f, 16.5f,500);
         assertNotEquals(null,miCasa);
     }
 }
