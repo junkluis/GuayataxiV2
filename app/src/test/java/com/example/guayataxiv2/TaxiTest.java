@@ -13,5 +13,8 @@ public class TaxiTest {
   public iniciarPruebas() {
     taxiValido = new Taxi("GCZ567", "Hiundai", 2);
     taxiNoValido = new Taxi("GCV653", "Renaul", 3);
+    
+    taxiValido.setColor("Rojo");
+    taxiNoValido.setColor("Negro");
   }
 }
