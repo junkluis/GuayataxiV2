@@ -28,7 +28,15 @@ public class ClienteTest {
         assertEquals(true, creacionExitosa);
      }
     
+    @Test
     public void ubicarCasa() {
-        clientePrueba.registrarCasa(33227, 3328217, 337226);
+        boolean asignacionExitosa = false
+        try {
+            clientePrueba.registrarCasa(33227, 3328217, 337226);
+            asignacionExitosa = true;
+        }catch(AssertionError error) {
+            asignacionExitosa = false;
+        }
+        assertEquals(true, asignacionExitosa);
     }
 }
