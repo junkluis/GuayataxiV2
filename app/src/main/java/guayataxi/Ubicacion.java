@@ -2,13 +2,13 @@ package guayataxi;
 
 public class Ubicacion {
 
-    private float longitud;
-    private float latitud;
+    private Double longitud;
+    private Double latitud;
     private String descripcion;
-    private float distancia;
+    private Double distancia;
     private float precio;
 
-    public Ubicacion(float longitud, float latitud, float distancia) {
+    public Ubicacion(Double longitud, Double latitud, Double distancia) {
         this.longitud = longitud;
         this.latitud = latitud;
         this.distancia = distancia;

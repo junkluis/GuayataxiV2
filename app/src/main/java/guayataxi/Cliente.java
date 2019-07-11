@@ -16,7 +16,7 @@ public class Cliente {
         this.billetera = billetera;
     }
 
-    public Ubicacion registrarCasa(float longitud, float latitud, float distancia){
+    public Ubicacion registrarCasa(Double longitud, Double latitud, Double distancia){
         Ubicacion miCasa = new Ubicacion(longitud, latitud, distancia);
         miCasa.setDescripcion("Mi Casa");
         this.casa = miCasa;

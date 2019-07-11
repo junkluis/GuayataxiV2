@@ -30,12 +30,13 @@ public class ClienteTest {
         }
         assertEquals(true, creacionExito);
     }
+
     @Test
     public void registrarCasa(){
 
         boolean registroExito = false;
         try{
-            Ubicacion Ubicacion= this.clientePrueba.registrarCasa((float)5.55, (float)2.55, (float)4.55);
+            Ubicacion ubicacion= this.clientePrueba.registrarCasa(5.55, 5.55, 4.55);
             registroExito = true;
         } catch (AssertionError error){
             registroExito = false;
