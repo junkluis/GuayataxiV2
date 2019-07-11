@@ -11,4 +11,20 @@ public class ClienteTest {
         clientePrueba = new Cliente("Jorge", "0934869211", ubicacion, billetera);
     }
 
+    public Ubicacion registrarCasa(float px, float py, float pz) {
+        Ubicacion ubicacion = new Ubicacion(px, py, pz);
+        return ubicacion;
+    }
+    
+    @Test
+     public void crearUnNuevoCliente() {
+        boolean creacionExitosa = false;
+        Ubicacion ubicacion = registrarCasa(30099843, 223284, 3332223);
+        try {
+            Cliente clienteJuan = new Cliente("Juan", "0934285443", ubicacion);
+            creacionExitosa = true;
+        }catch(AssertionError error) {
+            creacionExitosa = false;
+        }
+         assertEquals(true, creacionExitosa);
 }
