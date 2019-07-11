@@ -10,7 +10,7 @@ public class ConductorTest {
     Conductor conductorSinTaxi = null;
     
     public iniciarPruebas() {
-        conductorPrueba = new Conductor("Wellington Matinez", "0937276890");
+        conductorPrueba = new Conductor("Wellington Matinez", "4937276890");
         ConductorSinTaxi = new Conductor("Clara Alcazar", "0955778979");
     }
     
@@ -36,5 +36,19 @@ public class ConductorTest {
             asignacionExitosa = false;
         }
         assertEquals(true, asignacionExitosa);         
+    }
+    
+    public void ferificacionCed(Conductor conductor) {
+        boolean verificacion = false;
+        verificacion = conductor.verificarCedula();
+        assertEquals(true, verificacion);         
+
+    }
+    
+    public void verificarCedulaDeConductores() {
+        Conductor conductorSinPapeles = new Conductor("Jose Alcivar", "02");
+        verificacionCed(ConductorPrueba);
+        verificacionCed(ConductorSinTaxi);
+        verificacionCed(ConductorSinPapeles);
     }
 }
