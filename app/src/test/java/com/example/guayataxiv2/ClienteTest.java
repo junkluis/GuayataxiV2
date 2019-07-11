@@ -8,7 +8,7 @@ public class ClienteTest {
     public void iniciarPruebas() {
         ubicacion = registrarCasa(20051, 55450, 33796);
         billetera = new Billetera(1);
-        clientePrueba = new Cliente("Jorge", "0934869211", ubicacion, billetera);
+        clientePrueba = new Cliente("Mildred", "0934869211", ubicacion, billetera);
     }
 
     public Ubicacion registrarCasa(float px, float py, float pz) {
