@@ -1,12 +1,7 @@
-language: android
+language: java
 
-android:
-  components:
-    - tools
-    - extra
-    - platform-tools
-    - build-tools-23.0.1
-    - android-23
+jdk:
+- oraclejdk8
 
-script:
-    - ./gradlew testBlueDebugUnitTestCoverage coveralls
+after_success:
+  - ./gradlew jacocoTestReport coveralls
