@@ -5,17 +5,21 @@ import org.junit.Test;
 
 import guayataxi.Billetera;
 import guayataxi.Cliente;
+import guayataxi.Ubicacion;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 
 public class ClienteTest {
-    Billetera billeteraPrueba = null;
+    private Billetera billeteraPrueba = null;
+    private Cliente clientePrueba = null;
 
     @Before
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(2);
+        clientePrueba = new Cliente("Nombre Completo", "0922503097", billeteraPrueba);
         billeteraPrueba.agregarFondos(10);
     }
 
@@ -34,5 +38,16 @@ public class ClienteTest {
 
     }
 
+    @Test
+    public void registrarCasaTest(){
+        boolean registroExitoso;
+        try{
+            clientePrueba.registrarCasa((float) 30, (float)30, (float)30);
+            registroExitoso = true;
+        } catch (AssertionError error){
+            registroExitoso = false;
+        }
+        assertTrue(registroExitoso);
+    }
 
 }
