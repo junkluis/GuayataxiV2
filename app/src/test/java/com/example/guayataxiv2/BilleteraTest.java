@@ -1,9 +1,9 @@
 package com.example.guayataxiv2;
 
-import com.example.guayataxi.Billetera;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import guayataxi.Billetera;
 
 import static org.junit.Assert.*;
 

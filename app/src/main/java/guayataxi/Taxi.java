@@ -1,4 +1,4 @@
-package com.example.guayataxi;
+package guayataxi;
 
 import java.util.Arrays;
 import java.util.List;

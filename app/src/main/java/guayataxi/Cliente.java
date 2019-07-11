@@ -1,4 +1,7 @@
-package com.example.guayataxi;
+package guayataxi;
+
+import guayataxi.Billetera;
+import guayataxi.Ubicacion;
 
 public class Cliente {
 

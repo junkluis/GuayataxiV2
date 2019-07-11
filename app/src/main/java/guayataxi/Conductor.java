@@ -1,4 +1,6 @@
-package com.example.guayataxi;
+package guayataxi;
+
+import guayataxi.Taxi;
 
 public class Conductor {
 
@@ -36,4 +38,5 @@ public class Conductor {
     }
 
 }
+
 

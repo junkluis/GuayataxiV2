@@ -1,4 +1,4 @@
-package com.example.guayataxi;
+package guayataxi;
 
 public class Ubicacion {
 

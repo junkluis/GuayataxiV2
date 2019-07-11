@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.guayataxi.Billetera;
-import com.example.guayataxi.Cliente;
+import guayataxi.Billetera;
+import guayataxi.Cliente;
 
 public class MainActivity extends AppCompatActivity {
 
