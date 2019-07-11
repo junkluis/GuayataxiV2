@@ -20,6 +20,8 @@ android {
     }
 }
 
+
+
 task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest']) {
     reports {
         xml.enabled = true
