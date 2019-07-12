@@ -35,6 +35,8 @@ public class Ubicacion {
         this.descripcion = descripcion;
     }
 
-
+    public String getDescripcion(){
+        return this.descripcion;
+    }
 
 }

@@ -12,6 +12,7 @@ public class BilleteraTest {
 
     Billetera billeteraPrueba = null;
     Billetera billeteraSinFondos = null;
+    Ubicacion ubicacionPrueba = null;
 
 
     @Before
@@ -35,13 +36,11 @@ public class BilleteraTest {
     }
 
 
-
     @Test
     public void bloquearBilletera(){
         boolean estado = billeteraPrueba.habilitarBilletera(false);
         assertEquals(false, estado);
     }
-
 
 
     @Test
@@ -50,7 +49,6 @@ public class BilleteraTest {
         String valor = billeteraPrueba.getValorBilletera();
         assertEquals(mensajeEsperado, valor);
     }
-
 
 
     @Test
