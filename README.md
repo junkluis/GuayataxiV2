@@ -2,7 +2,7 @@
 Taller Cobertura de código
 
 [![Build Status](https://travis-ci.org/junkluis/GuayataxiV2.svg?branch=master)](https://travis-ci.org/junkluis/GuayataxiV2)
-[![codecov](https://codecov.io/gh/junkluis/GuayataxiV2/branch/master/graph/badge.svg)](https://codecov.io/gh/junkluis/GuayataxiV2)
+[![codecov](https://codecov.io/gh/junkluis/GuayataxiV2/branch/master/graph/badge.svg)](https://codecov.io/gh/junkluis/GuayataxiV2/branch/anibal_gamboa_carrillo/graphs/badge.svg)
 
 
 ## Instrucciones:
