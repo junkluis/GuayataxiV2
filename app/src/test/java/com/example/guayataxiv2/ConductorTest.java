@@ -43,7 +43,7 @@ public class ConductorTest {
 	@Test
     public void asignarTaxiCreado(){
         Taxi taxi = new Taxi("aaaaa","bbbbbb",1);
-        boolean estado = this.conductor.asignarUnTaxi(taxi);
+        boolean estado = this.conductorPrueba.asignarUnTaxi(taxi);
         assertEquals(true,estado);
     }
 
