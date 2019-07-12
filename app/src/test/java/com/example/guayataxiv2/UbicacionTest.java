@@ -29,9 +29,9 @@ public class UbicacionTest {
     @Test
     public void preciocorrecto(){
 
-        Ubicacion ubicacion =new Ubicacion(3.2f,4.6f,30.9f);
-        float valorcorrecto = ubicacion.calcularPrecio();
-        assertEquals(valorcorrecto,10.0f,0.5f);
+        Ubicacion miCasa = new Ubicacion(12.2f,12.2f,15.0f);
+        float precio = miCasa.calcularPrecio();
+        assertEquals(precio,5.0f,0.5f);
 
 
 
