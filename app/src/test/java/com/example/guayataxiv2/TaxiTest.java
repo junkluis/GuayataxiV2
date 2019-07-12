@@ -18,7 +18,8 @@ public class TaxiTest {
     
 
   }
-  
+
+  @Test
   public void confirmarColores() {
     String mensaje1 =taxiValido.setColor("Rojo");
     String mensaje2 = taxiNoValido.setColor("Negro");

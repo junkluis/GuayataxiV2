@@ -1,5 +1,7 @@
 package com.example.guayataxiv2;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 import guayataxi.Ubicacion;
@@ -18,7 +20,8 @@ public class UbicacionTest {
     u3.setDescripcion("Guayaquil");
     u4.setDescripcion("Quito");
   }
-  
+
+  @Test
   public void verPrecios() {
     float r1, r2, r3, r4;
     
