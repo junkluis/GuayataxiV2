@@ -1,8 +1,8 @@
 # GuayataxiV2
 Taller Cobertura de código
 
-[![Build Status](https://travis-ci.org/junkluis/GuayataxiV2.svg?branch=master)](https://travis-ci.org/junkluis/GuayataxiV2)
-[![codecov](https://codecov.io/gh/junkluis/GuayataxiV2/branch/master/graph/badge.svg)](https://codecov.io/gh/junkluis/GuayataxiV2)
+[![Build Status](https://travis-ci.org/junkluis/GuayataxiV2.svg?branch=jose_masson_pinzon)](https://travis-ci.org/junkluis/GuayataxiV2)
+[![codecov](https://codecov.io/gh/junkluis/GuayataxiV2/branch/jose_masson_pinzon/graph/badge.svg)](https://codecov.io/gh/junkluis/GuayataxiV2)
 
 
 ## Instrucciones:
