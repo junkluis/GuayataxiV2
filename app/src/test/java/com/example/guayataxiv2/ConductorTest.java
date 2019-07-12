@@ -4,21 +4,23 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guayataxi.Taxi;
+import guayataxi.Conductor;
+import static org.junit.Assert.*;
 
 public class ConductorTest {
     Conductor conductorPrueba = null;
     Conductor conductorSinTaxi = null;
     
-    public iniciarPruebas() {
+    public void iniciarPruebas() {
         conductorPrueba = new Conductor("Wellington Matinez", "4937276890");
-        ConductorSinTaxi = new Conductor("Clara Alcazar", "0955778979");
+        conductorSinTaxi = new Conductor("Clara Alcazar", "0955778979");
     }
     
     public void asignarTaxi() {
         boolean asignacionExitosa = false;
         Taxi taxi = new Taxi("GXZ093", "Ferarari", 1);
         try {
-            conductorPrueba.asignarTaxi(taxi);
+            conductorPrueba.asignarUnTaxi(taxi);
             asignacionExitosa = true;
         } catch (AssertionError error){
             asignacionExitosa = false;
@@ -30,7 +32,7 @@ public class ConductorTest {
         Taxi taxi = null;
         boolean asignacionExitosa = false;        
         try {
-            conductorPrueba.asignarTaxi(taxi);
+            conductorPrueba.asignarUnTaxi(taxi);
             asignacionExitosa = true;
         } catch (AssertionError error){
             asignacionExitosa = false;
@@ -38,7 +40,7 @@ public class ConductorTest {
         assertEquals(true, asignacionExitosa);         
     }
     
-    public void ferificacionCed(Conductor conductor) {
+    public void verificacionCed(Conductor conductor) {
         boolean verificacion = false;
         verificacion = conductor.verificarCedula();
         assertEquals(true, verificacion);         
@@ -47,8 +49,8 @@ public class ConductorTest {
     
     public void verificarCedulaDeConductores() {
         Conductor conductorSinPapeles = new Conductor("Jose Alcivar", "02");
-        verificacionCed(ConductorPrueba);
-        verificacionCed(ConductorSinTaxi);
-        verificacionCed(ConductorSinPapeles);
+        verificacionCed(conductorPrueba);
+        verificacionCed(conductorSinTaxi);
+        verificacionCed(conductorSinPapeles);
     }
 }

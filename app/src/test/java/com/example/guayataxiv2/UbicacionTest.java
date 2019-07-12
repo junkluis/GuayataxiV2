@@ -1,5 +1,9 @@
 package com.example.guayataxiv2;
 
+import static org.junit.Assert.*;
+
+import guayataxi.Ubicacion;
+
 public class UbicacionTest {
   Ubicacion u1 = null, u2 = null, u3 = null, u4 = null;
   
@@ -16,16 +20,16 @@ public class UbicacionTest {
   }
   
   public void verPrecios() {
-    int r1, r2, r3, r4;
+    float r1, r2, r3, r4;
     
     r1 = u1.calcularPrecio();
     r2 = u2.calcularPrecio();
     r3 = u3.calcularPrecio();
     r4 = u4.calcularPrecio();
     
-    intEquals(2, r1);
-    intEquals(5, r2);
-    intEquals(10, r3);
-    intEquals(15, r4);
+    assertEquals(2, r1);
+    assertEquals(5, r2);
+    assertEquals(10, r3);
+    assertEquals(15, r4);
   }
 }
