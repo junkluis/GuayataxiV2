@@ -28,10 +28,11 @@ public class UbicacionTest {
 
     @Test
     public void preciocorrecto(){
-        float esperado=2;
-        Ubicacion ubicacion =new Ubicacion(3.2f,4.6f,5.9f);
+
+        Ubicacion ubicacion =new Ubicacion(3.2f,4.6f,30.9f);
         float valorcorrecto = ubicacion.calcularPrecio();
-        assertEquals(esperado,valorcorrecto);
+        assertEquals(valorcorrecto,10.0f,0.5f);
+
 
 
     }
