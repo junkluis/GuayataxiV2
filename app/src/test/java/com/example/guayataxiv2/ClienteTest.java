@@ -17,7 +17,7 @@ public class ClienteTest {
     Billetera billeteraPrueba = null;
     Ubicacion ubicacionPrueba = null;
 
-    @Before
+    /*@Before
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(1);
         clientePrueba = new Cliente("Sebastian Ramirez", "0954225447", billeteraPrueba);
@@ -58,6 +58,6 @@ public class ClienteTest {
             registroExito = false;
         }
         assertEquals(true, registroExito);
-    }
+    }*/
 
 }

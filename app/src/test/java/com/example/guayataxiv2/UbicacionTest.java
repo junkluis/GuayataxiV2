@@ -30,20 +30,21 @@ public class UbicacionTest {
 
     @Test
     public void setDescripcion(){
-    	boolean creacionExito = false;
+    	boolean descripcionExito = false;
         try{
         	String descripcion = "descripcion";
             ubicacionPrueba.setDescripcion(descripcion);
+            descripcionExito = true;
         } catch (AssertionError error){
-            creacionExito = false;
+            descripcionExito = false;
         }
-        assertEquals(true, creacionExito);
+        assertEquals(true, descripcionExito);
     }
 
     @Test
     public void precioCalculadoCero(){
     	float precioEsperado = 0;
-    	Ubicacion ubicacion1 = new Ubicacion(2.31f, 2.31f, 0);
+    	Ubicacion ubicacion1 = new Ubicacion(2, 2, 0);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }
@@ -51,7 +52,7 @@ public class UbicacionTest {
     @Test
     public void precioCalculadoCero1(){
     	float precioEsperado = 0;
-    	Ubicacion ubicacion1 = new Ubicacion(2.31f, 2.31f, 40);
+    	Ubicacion ubicacion1 = new Ubicacion(2, 2, 40);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }
@@ -59,7 +60,7 @@ public class UbicacionTest {
     @Test
     public void precioCalculadoDos(){
     	float precioEsperado = 2;
-    	Ubicacion ubicacion1 = new Ubicacion(2.31f, 2.31f, 5);
+    	Ubicacion ubicacion1 = new Ubicacion(2, 2, 5);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }
@@ -67,7 +68,7 @@ public class UbicacionTest {
     @Test
     public void precioCalculadoCinco(){
     	float precioEsperado = 5;
-    	Ubicacion ubicacion1 = new Ubicacion(2.31f, 2.31f, 10);
+    	Ubicacion ubicacion1 = new Ubicacion(2, 2, 10);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }
@@ -75,7 +76,7 @@ public class UbicacionTest {
     @Test
     public void precioCalculadoDiez(){
     	float precioEsperado = 10;
-    	Ubicacion ubicacion1 = new Ubicacion(60, 2.31f, 40);
+    	Ubicacion ubicacion1 = new Ubicacion(60, 2., 40);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }
@@ -83,7 +84,7 @@ public class UbicacionTest {
     @Test
     public void precioCalculadoQuince(){
     	float precioEsperado = 15;
-    	Ubicacion ubicacion1 = new Ubicacion(2.31f, 60, 40);
+    	Ubicacion ubicacion1 = new Ubicacion(2, 60, 40);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }
