@@ -37,4 +37,13 @@ public class TaxiTest {
         }
         assertEquals(true, creacionExito);
     }
+
+
+    @Test
+    public void taxicolor(){
+        Taxi tax = new Taxi("GOV623", "CHEVROLET", 23);
+        String col = tax.setColor("Amarillo");
+        assertEquals(col, "Al taxi se le asigno el color:Amarillo");
+    }
+
 }
