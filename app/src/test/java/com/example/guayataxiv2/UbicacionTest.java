@@ -8,7 +8,6 @@ import static org.junit.Assert.assertEquals;
 
 public class UbicacionTest {
 
-
     @Test
     public void precio_2(){
         Ubicacion miCasa = new Ubicacion(12.2f,12.2f,5.0f);
@@ -34,6 +33,14 @@ public class UbicacionTest {
     public void precio_15(){
         Ubicacion miCasa = new Ubicacion(19.1f,52.2f,31.0f);
         float precio = miCasa.calcularPrecio();
+        assertEquals(precio,15.0f,0.5f);
+    }
+
+    @Test
+    public void setDescripcion(){
+        Ubicacion miCasa = new Ubicacion(19.1f,52.2f,31.0f);
+        float precio = miCasa.calcularPrecio();
+        miCasa.setDescripcion("sss");
         assertEquals(precio,15.0f,0.5f);
     }
 
