@@ -1,6 +1,4 @@
-package guayataxi;
-
-import guayataxi.Taxi;
+package com.example.guayataxiv2.guayataxi;
 
 public class Conductor {
 

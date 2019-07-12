@@ -1,4 +1,5 @@
-package guayataxi;
+package com.example.guayataxiv2.guayataxi;
+
 
 public class Ubicacion {
 
@@ -35,6 +36,14 @@ public class Ubicacion {
         this.descripcion = descripcion;
     }
 
-
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ubicacion ubicacion = (Ubicacion) o;
+        return Float.compare(ubicacion.longitud, longitud) == 0 &&
+                Float.compare(ubicacion.latitud, latitud) == 0 &&
+                Float.compare(ubicacion.distancia, distancia) == 0;
+    }
 
 }

@@ -3,7 +3,7 @@ package com.example.guayataxiv2;
 import org.junit.Before;
 import org.junit.Test;
 
-import guayataxi.Billetera;
+import com.example.guayataxiv2.guayataxi.Billetera;
 
 import static org.junit.Assert.*;
 

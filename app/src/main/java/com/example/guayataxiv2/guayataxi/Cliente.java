@@ -1,7 +1,4 @@
-package guayataxi;
-
-import guayataxi.Billetera;
-import guayataxi.Ubicacion;
+package com.example.guayataxiv2.guayataxi;
 
 public class Cliente {
 
@@ -16,13 +13,13 @@ public class Cliente {
         this.billetera = billetera;
     }
 
+
+
     public Ubicacion registrarCasa(float longitud, float latitud, float distancia){
         Ubicacion miCasa = new Ubicacion(longitud, latitud, distancia);
         miCasa.setDescripcion("Mi Casa");
         this.casa = miCasa;
         return miCasa;
     }
-
-
 
 }

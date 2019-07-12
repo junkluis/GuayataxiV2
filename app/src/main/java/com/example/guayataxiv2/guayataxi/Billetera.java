@@ -1,4 +1,4 @@
-package guayataxi;
+package com.example.guayataxiv2.guayataxi;
 
 public class Billetera {
 
