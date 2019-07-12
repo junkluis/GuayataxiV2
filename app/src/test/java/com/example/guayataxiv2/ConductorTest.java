@@ -14,7 +14,7 @@ public class ConductorTest {
 
 	@Before
 	public void iniciarPruebas(){
-        conductorPrueba = new Conductor("Conductor 1", "0942663452");
+        conductorPrueba = new Conductor("Conductor 12", "0942663452");
     }
 
     @Test
