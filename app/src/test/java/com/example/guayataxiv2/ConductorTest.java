@@ -51,4 +51,10 @@ public class ConductorTest {
         assertEquals(true,valor);
     }
 
+    @Test
+    public void comprobarcedulainvalida(){
+        Conductor conductor= new Conductor("Daniel Saigua Labre", "952475689");
+        boolean valor = conductor.verificarCedula();
+        assertFalse(valor);
+    }
 }
