@@ -22,13 +22,13 @@ public class ClienteTest {
      public void crearUnNuevoCliente() {
         boolean creacionExitosa = false;
         Billetera billetera = new Billetera(2);
-        try {
+        //try {
             Cliente clienteJuan = new Cliente("Juan", "0934285443", billetera);
-            creacionExitosa = true;
-        }catch(AssertionError error) {
-            creacionExitosa = false;
-        }
-        assertEquals(true, creacionExitosa);
+            //creacionExitosa = true;
+        //}catch(AssertionError error) {
+        //    creacionExitosa = false;
+        //}
+       // assertEquals(true, creacionExitosa);
      }
     
     @Test
