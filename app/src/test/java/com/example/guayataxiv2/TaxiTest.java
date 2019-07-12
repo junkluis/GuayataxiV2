@@ -16,22 +16,14 @@ public class TaxiTest {
 
     @Before
     public void iniciarPruebas(){
-        taxiPrueba = new Taxi(
-                'GSG-7978',
-                'KIA',
-                1
-        );
+        taxiPrueba = new Taxi('GSG-7978','KIA',1);
     }
 
     @Test
     public void crearUnNuevoTaxi(){
         boolean creacionExito = false;
         try{
-            Taxi taxiNuevo = new Taxi(
-                    'GSG-7978',
-                    'KIA',
-                    1
-            );
+            Taxi taxiNuevo = new Taxi('GSG-7978','KIA',1);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;

@@ -19,21 +19,14 @@ public class ClienteTest {
         billeteraPrueba = new Billetera(2);
         billeteraPrueba.agregarFondos(10);
 
-        clienteCreado = new Cliente(
-                'Leonardo Castro',
-                '0926385998',
-                billeteraPrueba
-        );
+        clienteCreado = new Cliente('Leonardo Castro','0926385998',billeteraPrueba);
     }
 
     @Test
     public void crearUnNuevoCliente(){
         boolean creacionExito = false;
         try{
-            Cliente clienteLeonardo = new Cliente('Leonardo Castro',
-                    '0926385998',
-                    billeteraPrueba
-            );
+            Cliente clienteLeonardo = new Cliente('Leonardo Castro','0926385998',billeteraPrueba);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
