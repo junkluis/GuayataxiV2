@@ -16,14 +16,14 @@ public class TaxiTest {
 
     @Before
     public void iniciarPruebas(){
-        taxiPrueba = new Taxi('GSG-7978','KIA',1);
+        taxiPrueba = new Taxi("GSG-7978","KIA",1);
     }
 
     @Test
     public void crearUnNuevoTaxi(){
         boolean creacionExito = false;
         try{
-            Taxi taxiNuevo = new Taxi('GSG-7978','KIA',1);
+            Taxi taxiNuevo = new Taxi("GSG-7978","KIA",1);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -33,8 +33,8 @@ public class TaxiTest {
 
     @Test
     public void setColorPrueba(){
-        String mensaje = 'Al taxi se le asigno el color: Rojo';
-        String mensajePrueba = taxiPrueba.setColor('Rojo');
+        String mensaje = "Al taxi se le asigno el color: Rojo";
+        String mensajePrueba = taxiPrueba.setColor("Rojo");
 
         assertEquals(mensaje,mensajePrueba);
     }

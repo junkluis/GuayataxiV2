@@ -17,16 +17,16 @@ public class ConductorTest {
 
     @Before
     public void iniciarPruebas(){
-        taxiPrueba = new Taxi('GSG-7978','KIA',1);
+        taxiPrueba = new Taxi("GSG-7978","KIA",1);
 
-        conductorPrueba = new Conductor('Leonardo Castro','0926385998');
+        conductorPrueba = new Conductor("Leonardo Castro","0926385998");
     }
 
     @Test
     public void crearUnNuevoConductor(){
         boolean creacionExito = false;
         try{
-            Conductor conductorNuevo = new Conductor('Leonardo Castro','0926385998');
+            Conductor conductorNuevo = new Conductor("Leonardo Castro","0926385998");
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
