@@ -31,12 +31,4 @@ public class UbicacionTest {
         assertEquals(true, creacionExito);
     }
 
-    @Test
-    public void calcularPrecioPrueba(){
-        float valor = 2;
-        float valorEsperado = ubicacionPrueba.calcularPrecio();
-
-
-        assertEquals(valor,valorEsperado);
-    }
 }
