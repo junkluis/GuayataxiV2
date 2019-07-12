@@ -14,11 +14,12 @@ public class ClienteTest {
 
     Cliente clienteprueba = null;
     Billetera billeteracliente=null;
+    Ubicacion ubicacioncliente=null;
 
     @Before
     public void Pruebascliente(){
        clienteprueba = new Cliente("Daniel Saigua","0935475689",billeteracliente);
-       ubicacioncliente=new Ubicacion(2.3,2.5,5.9);
+       ubicacioncliente=new Ubicacion(2.3f,2.5f,5.9f);
 
 
     }
@@ -41,7 +42,7 @@ public class ClienteTest {
     public void crearubicacion(){
         boolean creacionExito = false;
         try{
-            Ubicacion ubicacion1 = new Ubicacion(2.0,2.2,4.9);
+            Ubicacion ubicacion1 = new Ubicacion(2.0f,2.2f,4.9f);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
