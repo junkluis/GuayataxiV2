@@ -1,5 +1,5 @@
 package com.example.guayataxiv2;
-package com.example.guayataxiv2;
+
 import guayataxi.Cliente;
 import guayataxi.Ubicacion;
 import guayataxi.Conductor;
