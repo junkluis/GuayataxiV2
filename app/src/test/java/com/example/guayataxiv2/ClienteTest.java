@@ -39,6 +39,11 @@ public class ClienteTest {
     }
 
 
+    @Test
+    public void asignarcasa(){
+        Ubicacion casa = this.cliente.registrarCasa(12.2f,12.2f,12.2f);
+        assertTrue(miCasa instanceof Ubicacion);
+    }
 
 
 
