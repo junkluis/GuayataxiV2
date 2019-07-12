@@ -28,5 +28,32 @@ public class TaxiTest {
         assertEquals(true, creacionExito);
     }
 
+    @Test
+    public void setearColorRojo(){
+    	String mensajeEsperado = "Al taxi se le asigno el color: Rojo";
+    	String mensajeObtenido = taxiPrueba.setColor("Rojo");
+    	assertEquals(mensajeEsperado, mensajeObtenido);
+    }
+
+    @Test
+    public void setearColorAmarillo(){
+    	String mensajeEsperado = "Al taxi se le asigno el color: Amarillo";
+    	String mensajeObtenido = taxiPrueba.setColor("Amarillo");
+    	assertEquals(mensajeEsperado, mensajeObtenido);
+    }
+
+    @Test
+    public void setearColorVerde(){
+    	String mensajeEsperado = "Al taxi se le asigno el color: Verde";
+    	String mensajeObtenido = taxiPrueba.setColor("Verde");
+    	assertEquals(mensajeEsperado, mensajeObtenido);
+    }
+
+    @Test
+    public void setearColorMal(){
+    	String mensajeEsperado = "Debe seleccionar un color dentor de la lista posibles";
+    	String mensajeObtenido = taxiPrueba.setColor("Morado");
+    	assertEquals(mensajeEsperado, mensajeObtenido);
+    }
     
 }

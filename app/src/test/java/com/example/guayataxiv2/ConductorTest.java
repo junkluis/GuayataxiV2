@@ -22,7 +22,7 @@ public class ConductorTest {
     public void crearNuevoConductor(){
     	boolean creacionExito = false;
         try{
-            Condutor conductor1 = new Conductor("Conductor 1", "0942663452");
+            Conductor conductor1 = new Conductor("Conductor 1", "0942663452");
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -48,7 +48,7 @@ public class ConductorTest {
     public void verificarCedula10(){
     	boolean verificarExito = false;
     	try{
-    		Condutor conductor1 = new Conductor("Conductor 1", "0942663452");
+    		Conductor conductor1 = new Conductor("Conductor 1", "0942663452");
     		verificarExito = conductorPrueba.verificarCedula();
     	} catch (AssertionError error){
             verificarExito = false;
@@ -60,7 +60,7 @@ public class ConductorTest {
     public void verificarCedulaMenor10(){
     	boolean verificarExito = false;
     	try{
-    		Condutor conductor1 = new Conductor("Conductor 1", "094266345");
+    		Conductor conductor1 = new Conductor("Conductor 1", "094266345");
     		verificarExito = conductorPrueba.verificarCedula();
     	} catch (AssertionError error){
             verificarExito = false;
@@ -72,7 +72,7 @@ public class ConductorTest {
     public void verificarCedulaMayor10(){
     	boolean verificarExito = false;
     	try{
-    		Condutor conductor1 = new Conductor("Conductor 1", "09426634501");
+    		Conductor conductor1 = new Conductor("Conductor 1", "09426634501");
     		verificarExito = conductorPrueba.verificarCedula();
     	} catch (AssertionError error){
             verificarExito = false;
@@ -84,7 +84,7 @@ public class ConductorTest {
     public void verificarCedulaEmpiezaDiferenteDeCero(){
     	boolean verificarExito = false;
     	try{
-    		Condutor conductor1 = new Conductor("Conductor 1", "1942663450");
+    		Conductor conductor1 = new Conductor("Conductor 1", "1942663450");
     		verificarExito = conductorPrueba.verificarCedula();
     	} catch (AssertionError error){
             verificarExito = false;
