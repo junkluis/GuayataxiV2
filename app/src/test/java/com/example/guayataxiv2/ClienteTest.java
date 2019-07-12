@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guayataxi.Billetera;
+import guayataxi.Ubicacion;
 import guayataxi.Cliente;
 
 import static org.junit.Assert.*;
@@ -40,7 +41,7 @@ public class ClienteTest {
     public void registrarCasa() {
         boolean registroExito = false;
         try {
-            Ubicacion casa = clientePrueba.registrarCasa(-2.3, -79.3, 20);
+            Ubicacion casa = clientePrueba.registrarCasa(-2.3F, -79.3F, 20F);
             registroExito = true;
         } catch (AssertionError error){
             registroExito = false;
