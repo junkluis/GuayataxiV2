@@ -36,9 +36,9 @@ public class ClienteTest {
 
     @Test
     public void agregarUbicacionAlCliente(){
-        Ubicacion ubicacionPrueba = new Ubicacion(0.8,0.6,0.45);
+        Ubicacion ubicacionPrueba = new Ubicacion(0.8f,0.6f,0.45f);
         ubicacionPrueba.setDescripcion("Mi Casa");
-        Ubicacion ubicacion = clienteCreado.registrarCasa(0.8,0.6,0.45);
+        Ubicacion ubicacion = clienteCreado.registrarCasa(0.8f,0.6f,0.45f);
 
 
         assertEquals(ubicacionPrueba, ubicacion);

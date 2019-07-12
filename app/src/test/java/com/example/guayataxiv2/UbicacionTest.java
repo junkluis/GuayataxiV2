@@ -16,14 +16,14 @@ public class UbicacionTest {
 
     @Before
     public void iniciarPruebas(){
-        ubicacionPrueba = new Ubicacion(0.8,0.6,0.45);
+        ubicacionPrueba = new Ubicacion(0.8f,0.6f,0.45f);
     }
 
     @Test
     public void crearUnaNuevaUbicacion(){
         boolean creacionExito = false;
         try{
-            Ubicacion ubicacionNueva = new Ubicacion(0.8,0.6,0.45);
+            Ubicacion ubicacionNueva = new Ubicacion(0.8f,0.6f,0.45f);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
