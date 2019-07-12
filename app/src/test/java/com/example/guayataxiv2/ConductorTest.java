@@ -39,4 +39,38 @@ public class ConductorTest {
         boolean valor = conductorPrueba.asignarUnTaxi(taxiPrueba);
         assertEquals(true,valor);
     }
+	
+	@Test
+    public void asignarTaxiCreado(){
+        Taxi taxi = new Taxi("aaaaa","bbbbbb",1);
+        boolean estado = this.conductor.asignarUnTaxi(taxi);
+        assertEquals(true,estado);
+    }
+
+    @Test
+    public void asignarTaxiNoCreado(){
+        Taxi taxi = null;
+        boolean estado = this.conductorPrueba.asignarUnTaxi(taxi);
+        assertEquals(false,estado);
+    }
+    @Test
+    public void verificarCedulaValida(){
+        Conductor conductor= new Conductor("prueba Conductor", "0987654321");
+        boolean validez = conductor.verificarCedula();
+        assertEquals(true, validez);
+    }
+    @Test
+    public void verificarCedulaValid1(){
+        Conductor conductor= new Conductor("prueba Conductor", "9987654321");
+        boolean validez = conductor.verificarCedula();
+        assertEquals(false, validez);
+    }
+
+    @Test
+    public void verificarCedulaInalida2(){
+        Conductor conductor= new Conductor("prueba Conductor", "0654321");
+        boolean validez = conductor.verificarCedula();
+        assertEquals(false, validez);
+    }
+
 }

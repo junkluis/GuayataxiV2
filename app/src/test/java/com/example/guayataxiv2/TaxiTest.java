@@ -38,4 +38,11 @@ public class TaxiTest {
 
         assertEquals(mensaje,mensajePrueba);
     }
+	
+
+    @Test
+    public void asignarColorInvalido(){
+        String respuesta = this.taxiPrueba.setColor("Plateado");
+        assertEquals("Debe seleccionar un color dentor de la lista posibles" ,respuesta);
+    }
 }

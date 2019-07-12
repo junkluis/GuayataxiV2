@@ -33,5 +33,20 @@ public class ClienteTest {
         }
         assertEquals(true, creacionExito);
     }
+	@Test
+    public void registrarCasa(){
+
+        boolean registroExito = false;
+        try{
+            Ubicacion ubicacion= this.clienteCreado.registrarCasa(5, 55, 45);
+
+            registroExito = true;
+        } catch (AssertionError error){
+            registroExito = false;
+        }
+        assertEquals(true, registroExito);
+
+    }
+}
 
 }
