@@ -76,7 +76,7 @@ public class UbicacionTest {
     @Test
     public void precioCalculadoDiez(){
     	float precioEsperado = 10;
-    	Ubicacion ubicacion1 = new Ubicacion(60, 2., 40);
+    	Ubicacion ubicacion1 = new Ubicacion(60, 2, 40);
     	float precioObtenido = ubicacion1.calcularPrecio();
     	assertEquals(precioEsperado, precioObtenido);
     }

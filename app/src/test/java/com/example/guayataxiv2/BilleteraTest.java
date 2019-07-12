@@ -15,7 +15,7 @@ public class BilleteraTest {
 
 
 
-    /*@Before
+    @Before
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(2);
         billeteraPrueba.agregarFondos(10);
@@ -86,7 +86,7 @@ public class BilleteraTest {
         String valor = billeteraSinFondos.agregarFondos(150);
 
         assertEquals(mensajeEsperado, valor);
-    }*/
+    }
 
 
 

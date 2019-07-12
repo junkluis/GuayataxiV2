@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class TaxiTest {
 
-	/*Taxi taxiPrueba = null;
+	Taxi taxiPrueba = null;
 
     @Before
     public void iniciarPruebas(){
@@ -54,6 +54,6 @@ public class TaxiTest {
     	String mensajeEsperado = "Debe seleccionar un color dentor de la lista posibles";
     	String mensajeObtenido = taxiPrueba.setColor("Morado");
     	assertEquals(mensajeEsperado, mensajeObtenido);
-    }*/
-
+    }
+    
 }

@@ -13,7 +13,7 @@ public class ConductorTest {
 
 	Conductor conductorPrueba = null;
 
-	/*@Before
+	@Before
 	public void iniciarPruebas(){
         conductorPrueba = new Conductor("Conductor 1", "0942663452");
     }
@@ -90,7 +90,7 @@ public class ConductorTest {
             verificarExito = false;
         }
         assertEquals(true, verificarExito);
-    }*/
+    }
 
 
 }
