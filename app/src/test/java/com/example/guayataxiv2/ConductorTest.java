@@ -8,7 +8,7 @@ import guayataxi.Taxi;
 
 import static org.junit.Assert.assertEquals;
 
-public class ConductorTest {
+public class ConductorTest{
     Taxi taxiPrueba = null;
     Conductor conductorPrueba = null;
 

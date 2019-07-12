@@ -9,7 +9,7 @@ import guayataxi.Ubicacion;
 
 import static org.junit.Assert.assertEquals;
 
-public class ClienteTest {
+public class ClienteTest{
 
     Billetera billeteraPrueba = null;
 

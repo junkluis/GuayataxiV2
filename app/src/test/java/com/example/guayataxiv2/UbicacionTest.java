@@ -7,7 +7,7 @@ import guayataxi.Ubicacion;
 
 import static org.junit.Assert.assertEquals;
 
-public class UbicacionTest {
+public class UbicacionTest{
 
 
     Ubicacion casaVenta = null;
