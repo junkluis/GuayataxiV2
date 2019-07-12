@@ -57,4 +57,12 @@ public class ConductorTest {
         boolean valor = conductor.verificarCedula();
         assertFalse(valor);
     }
+
+    @Test
+    public void comprobarcedulainvalidamenosdigitos(){
+        Conductor conductor= new Conductor("Daniel Saigua Labre", "09524756");
+        boolean valor = conductor.verificarCedula();
+        assertFalse(valor);
+    }
+
 }
