@@ -22,5 +22,5 @@ public class TaxiTest {
         assertEquals(colorPosible, "Al taxi se le asigno el color: Amarillo");
     }
 
-  
+
 }
