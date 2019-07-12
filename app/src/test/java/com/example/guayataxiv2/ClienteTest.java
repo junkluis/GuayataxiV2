@@ -3,37 +3,41 @@ package com.example.guayataxiv2;
 public class ClienteTest {
 
 
-    Cliente clienteubicacionreal = null;
-
+    Cliente clienteprueba = null;
+    Billetera billeteracliente=null;
 
     @Before
-    public void iniciarPruebas(){
-
-
-
-        clientePrueba = new Cliente(2);
-        billeteraPrueba.agregarubicacion(10);
+    public void Pruebascliente(){
+       clienteprueba = new Cliente("Daniel Saigua","0935475689",billeteracliente);
+       ubicacioncliente=new Ubicacion(2.3,2.5,5.9);
 
 
     }
+
+
 
     @Test
     public void crearcliente(){
         boolean creacionExito = false;
         try{
-            Cliente clientedaniel = new Cliente(1);
+            Cliente cliente1 = new Cliente("Luis Mora","0935234519",billeteracliente);
+            creacionExito = true;
+        } catch (AssertionError error){
+            creacionExito = false;
+        }
+        assertEquals(true, creacionExito);im
+    }
+
+    @Test
+    public void crearubicacion(){
+        boolean creacionExito = false;
+        try{
+            Ubicacion ubicacion1 = new Ubicacion(2.0,2.2,4.9);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
         }
         assertEquals(true, creacionExito);
-    }
-
-    @Test
-    public void agregarubicacion(){
-        String mensajeEsperado = "Se agregaron la ubicacion con exito";
-        String valor = clienteubicacionreal.agregarubicacion(50);
-        assertEquals(mensajeEsperado, valor);
     }
 
 
