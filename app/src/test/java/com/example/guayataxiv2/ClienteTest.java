@@ -37,6 +37,7 @@ public class ClienteTest {
         boolean registroExito = false;
         try{
             Ubicacion ubicacion= this.clientePrueba.registrarCasa(5, 55, 45);
+
             registroExito = true;
         } catch (AssertionError error){
             registroExito = false;
