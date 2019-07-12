@@ -21,14 +21,14 @@ public class ClienteTest {
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(1);
         clientePrueba = new Cliente("Sebastian Ramirez", "0954225447", billeteraPrueba);
+        ubicacionPrueba = new Ubicacion(2.34f, 2.34f, 450.26f);
     }
 
     @Test
     public void crearUnNuevoCliente(){
         boolean creacionExito = false;
         try{
-            billeteraPrueba = new Billetera(1);
-            clientePrueba = new Cliente("Sebastian Ramirez", "0954225447", billeteraPrueba);
+            Cliente clienteSeba = new Cliente("Sebastian Ramirez", "0954225447", billeteraPrueba);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -40,7 +40,7 @@ public class ClienteTest {
     public void crearUnaNuevaUbicacion(){
         boolean creacionExito = false;
         try{
-            ubicacionPrueba = new Ubicacion(2.34, 2.34, 450.26);
+            Ubicacion ubicacion123 = new Ubicacion(2.31f, 2.31f, 450.21f);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -50,14 +50,14 @@ public class ClienteTest {
 
     @Test
     public void registrarCasa(){
-        boolean creacionExito = false;
+        boolean registroExito = false;
         try{
-            ubicacionPrueba = clientePrueba.registrarCasa(2.35, 2.34, 450.26);
-            creacionExito = true;
+            Ubicacion ubicacionCasa = clientePrueba.registrarCasa(2.35f, 2.34f, 450.26f);
+            registroExito = true;
         } catch (AssertionError error){
-            creacionExito = false;
+            registroExito = false;
         }
-        assertEquals(true, creacionExito);
+        assertEquals(true, registroExito);
     }
 
 }

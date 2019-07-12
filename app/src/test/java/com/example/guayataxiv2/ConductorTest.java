@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guayataxi.Conductor;
+import guayataxi.Taxi;
 
 import static org.junit.Assert.*;
 
@@ -41,6 +42,54 @@ public class ConductorTest {
         assertEquals(true, asinacionExito);
 
 
+    }
+
+    @Test
+    public void verificarCedula10(){
+    	boolean verificarExito = false;
+    	try{
+    		Condutor conductor1 = new Conductor("Conductor 1", "0942663452");
+    		verificarExito = conductorPrueba.verificarCedula();
+    	} catch (AssertionError error){
+            verificarExito = false;
+        }
+        assertEquals(true, verificarExito);
+    }
+
+    @Test
+    public void verificarCedulaMenor10(){
+    	boolean verificarExito = false;
+    	try{
+    		Condutor conductor1 = new Conductor("Conductor 1", "094266345");
+    		verificarExito = conductorPrueba.verificarCedula();
+    	} catch (AssertionError error){
+            verificarExito = false;
+        }
+        assertEquals(true, verificarExito);
+    }
+
+    @Test
+    public void verificarCedulaMayor10(){
+    	boolean verificarExito = false;
+    	try{
+    		Condutor conductor1 = new Conductor("Conductor 1", "09426634501");
+    		verificarExito = conductorPrueba.verificarCedula();
+    	} catch (AssertionError error){
+            verificarExito = false;
+        }
+        assertEquals(true, verificarExito);
+    }
+
+    @Test
+    public void verificarCedulaEmpiezaDiferenteDeCero(){
+    	boolean verificarExito = false;
+    	try{
+    		Condutor conductor1 = new Conductor("Conductor 1", "1942663450");
+    		verificarExito = conductorPrueba.verificarCedula();
+    	} catch (AssertionError error){
+            verificarExito = false;
+        }
+        assertEquals(true, verificarExito);
     }
 
 
