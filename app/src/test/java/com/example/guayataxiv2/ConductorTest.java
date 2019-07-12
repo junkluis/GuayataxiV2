@@ -1,6 +1,7 @@
 package com.example.guayataxiv2;
 import guayataxi.Cliente;
 import guayataxi.Ubicacion;
+import guayataxi.Conductor;
 import guayataxi.Taxi;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +36,7 @@ public class ConductorTest {
         assertEquals(true, creacionExito);
     }
 
-   
+
 
     @Test
     public void comprobarcedula(){
