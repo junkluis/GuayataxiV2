@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guayataxi.Conductor;
+import guayataxi.Taxi;
 
 import static org.junit.Assert.*;
 
@@ -48,5 +49,19 @@ public class ConductorTest {
     public void verificarCedulaNoValidaPrimerCaracter() {
         boolean cedulaValida = conductorNoValido2.verificarCedula();
         assertTrue(!cedulaValida);
+    }
+
+    @Test
+    public void asignarTaxiValido() {
+        Taxi t1 = new Taxi("GXY-2817", "NISSAN", 2);
+        boolean asignacion = conductorPruebaValido.asignarUnTaxi(t1);
+        assertTrue(asignacion);
+    }
+
+    @Test
+    public void asignarTaxiNoValido() {
+        Taxi t2 = null;
+        boolean asignacion = conductorPruebaValido.asignarUnTaxi(t2);
+        assertTrue(!asignacion);
     }
 }

@@ -21,7 +21,7 @@ public class UbicacionTest {
         u2 = new Ubicacion(20F, 30F, 5);
         u3 = new Ubicacion(20F, 30F, 29.9F);
         u4 = new Ubicacion(50.01F, 30F, 30.01F);
-        u5 = new Ubicacion(30.01F, 50.01F, 30.01F);
+        u5 = new Ubicacion(30.01F, 51.01F, 31F);
     }
 
     @Test
