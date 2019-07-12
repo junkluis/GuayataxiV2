@@ -22,5 +22,17 @@ public class TaxiTest {
         assertEquals(colorPosible, "Al taxi se le asigno el color: Amarillo");
     }
 
+    @Test
+    public void taxiNuevo(){
+        boolean creacionExito = false;
+        try{
+            Taxi otroTaxi = new Taxi("asadasa", "marca", 1);
+            creacionExito = true;
+        } catch (AssertionError error){
+            creacionExito = false;
+        }
+        assertEquals(true, creacionExito);
+    }
+
 
 }

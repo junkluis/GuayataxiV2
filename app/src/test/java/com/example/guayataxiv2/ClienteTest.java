@@ -14,7 +14,7 @@ public class ClienteTest{
     Billetera billeteraPrueba = null;
 
     Cliente clientePrueba = null;
-    Cliente clienteSinDatos = null;
+    Ubicacion ubicacion = null;
 
 
     @Before
@@ -41,7 +41,7 @@ public class ClienteTest{
     public void registrarCasa(){
         boolean creacionExito = false;
         try{
-            Ubicacion casaLuis = new Ubicacion(22,25,12);
+            clientePrueba.registrarCasa(22,25,12);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;

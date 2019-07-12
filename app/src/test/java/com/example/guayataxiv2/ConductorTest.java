@@ -40,7 +40,7 @@ public class ConductorTest{
     @Test
     public void asignarTaxiInexistente(){
         Taxi taxi = null;
-        boolean estado = this.conductorPrueba.asignarUnTaxi(taxi);
+        boolean estado = conductorPrueba.asignarUnTaxi(taxi);
         assertEquals(false,estado);
     }
     @Test
