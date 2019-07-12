@@ -30,7 +30,7 @@ public class UbicacionTest {
     public void preciocorrecto(){
         String mensajeEsperado = "Se agregaron los fondos con exito";
         Ubicacion ubicacion =new Ubicacion(3.2f,4.6f,5.9f);
-        String valorcorrecto = ubicacion.calcularPrecio();
+        float valorcorrecto = ubicacion.calcularPrecio();
         assertEquals(mensajeEsperado,valorcorrecto);
 
 
