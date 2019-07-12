@@ -37,11 +37,9 @@ public class UbicacionTest {
 
     @Test
     public void preciocorrectosegundavalidacion(){
-
-        Ubicacion ubicacion1 = new Ubicacion(9.8f,16.9f,40.0f);
-        float valor1 = ubicacion1.calcularPrecio();
-        assertEquals(valor1,10.0f,0.5f);
-
+        Ubicacion ubicacion1 = new Ubicacion(58.0f,10.6f,35.0f);
+        float valor = ubicacion1.calcularPrecio();
+        assertEquals(valor,10.0f,0.5f);
     }
 
 
