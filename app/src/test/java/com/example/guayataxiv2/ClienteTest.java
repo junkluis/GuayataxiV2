@@ -41,7 +41,7 @@ public class ClienteTest {
     @Test
     public void asignarcasa(){
         Ubicacion casa = clienteprueba.registrarCasa(3.3f,9.5f,9.7f);
-        assertTrue(miCasa instanceof Ubicacion);
+        assertTrue(casa instanceof Ubicacion);
     }
 
 
