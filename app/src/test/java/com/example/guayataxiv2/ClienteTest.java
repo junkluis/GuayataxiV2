@@ -25,7 +25,7 @@ public class ClienteTest {
         } catch (AssertionError error){
             creacionExito = false;
         }
-        assertEquals(true, creacionExito);im
+        assertEquals(true, creacionExito);
     }
 
     @Test
