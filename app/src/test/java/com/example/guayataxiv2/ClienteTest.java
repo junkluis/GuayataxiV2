@@ -13,18 +13,17 @@ import static org.junit.Assert.*;
 
 public class ClienteTest {
 
-	Cliente clientePrueba = null;
-	Billetera billeteraPrueba = null;
-	Ubicacion ubicacionPrueba = null;
+    Cliente clientePrueba = null;
+    Billetera billeteraPrueba = null;
+    Ubicacion ubicacionPrueba = null;
 
-	@Before
+    @Before
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(1);
         clientePrueba = new Cliente("Sebastian Ramirez", "0954225447", billeteraPrueba);
     }
 
-
-	@Test
+    @Test
     public void crearUnNuevoCliente(){
         boolean creacionExito = false;
         try{
@@ -41,7 +40,7 @@ public class ClienteTest {
     public void crearUnaNuevaUbicacion(){
         boolean creacionExito = false;
         try{
-            ubicacionPrueba = new Ubicacion(2.3456456, 2.3456456, 450.26);
+            ubicacionPrueba = new Ubicacion(2.34, 2.34, 450.26);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -53,7 +52,7 @@ public class ClienteTest {
     public void registrarCasa(){
         boolean creacionExito = false;
         try{
-        	ubicacionPrueba = clientePrueba.registrarCasa(2.3456456, 2.3456456, 450.26);
+            ubicacionPrueba = clientePrueba.registrarCasa(2.35, 2.34, 450.26);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
