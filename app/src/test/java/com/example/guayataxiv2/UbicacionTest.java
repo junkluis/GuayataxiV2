@@ -29,8 +29,8 @@ public class UbicacionTest {
     @Test
     public void preciocorrecto(){
         String mensajeEsperado = "Se agregaron los fondos con exito";
-        ubicacion =new Ubicacion(3.2f,4.6f,5.9f);
-        string valorcorrecto = ubicacion.calcularPrecio();
+        Ubicacion ubicacion =new Ubicacion(3.2f,4.6f,5.9f);
+        String valorcorrecto = ubicacion.calcularPrecio();
         assertEquals(mensajeEsperado,valorcorrecto);
 
 
