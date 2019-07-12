@@ -42,5 +42,21 @@ public class UbicacionTest {
         assertEquals(valor,10.0f,0.5f);
     }
 
+    @Test
+    public void establecerdescripcion(){
+        boolean registroExito = false;
+        try{
+
+            Ubicacion ubicacion= new Ubicacion(4.0f, 1.5f, 3.4f);
+
+            ubicacion.setDescripcion("taxiconsumegasolina");
+            registroExito = true;
+        } catch (AssertionError error){
+            registroExito = false;
+        }
+        assertEquals(true, registroExito);
+
+    }
+
 
 }
