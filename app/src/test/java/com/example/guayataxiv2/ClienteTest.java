@@ -7,7 +7,7 @@ import guayataxi.Cliente;
 import guayataxi.Ubicacion;
 
 import static org.junit.Assert.*;
-
+import static junit.framework.TestCase.assertTrue;
 
 public class ClienteTest {
 
@@ -38,7 +38,11 @@ public class ClienteTest {
         assertEquals(true, creacionExito);
     }
 
-
+    @Test
+    public void asignarcasa(){
+        Ubicacion casa = clienteprueba.registrarCasa(3.3f,9.5f,9.7f);
+        assertTrue(miCasa instanceof Ubicacion);
+    }
 
 
 
