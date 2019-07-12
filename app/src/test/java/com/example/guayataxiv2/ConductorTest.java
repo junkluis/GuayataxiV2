@@ -65,7 +65,7 @@ public class ConductorTest {
         } catch (AssertionError error){
             verificacionExito = false;
         }
-        assertEquals(true, verificacionExito);
+        assertEquals(false, verificacionExito);
     }
 
     @Test
@@ -76,7 +76,7 @@ public class ConductorTest {
         } catch (AssertionError error){
             verificacionExito = false;
         }
-        assertEquals(true, verificacionExito);
+        assertEquals(false, verificacionExito);
     }
 
 }
