@@ -6,27 +6,30 @@ import org.junit.Test;
 import guayataxi.Billetera;
 import guayataxi.Cliente;
 import guayataxi.Ubicacion;
-import guayataxi.Conductor;
-import guayataxi.Taxi;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-public class ConductorTest {
-    Taxi taxiPrueba = null;
-    Conductor conductorPrueba = null;
+public class ClienteTest {
+
+    Billetera billeteraPrueba = null;
+
+    Cliente clientePrueba = null;
+    Cliente clienteSinDatos = null;
+
 
     @Before
     public void iniciarPruebas(){
-        taxiPrueba = new Taxi("GSG-7978","KIA",1);
+        billeteraPrueba = new Billetera(2);
+        billeteraPrueba.agregarFondos(10);
+        clientePrueba = new Cliente("Pedro","09200558696",billeteraPrueba);
 
-        conductorPrueba = new Conductor("Leonardo Castro","0926385998");
     }
 
     @Test
-    public void crearUnNuevoConductor(){
+    public void crearUnaNuevoCliente(){
         boolean creacionExito = false;
         try{
-            Conductor conductorNuevo = new Conductor("Leonardo Castro","0926385998");
+            Cliente clienteLuis = new Cliente("Luis","09200558696",billeteraPrueba);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
@@ -35,42 +38,20 @@ public class ConductorTest {
     }
 
     @Test
-    public void asignarTaxiAlConductor(){
-        boolean valor = conductorPrueba.asignarUnTaxi(taxiPrueba);
-        assertEquals(true,valor);
+    public void registrarCasa(){
+        boolean creacionExito = false;
+        try{
+            Ubicacion casaLuis = new Ubicacion(22,25,12);
+            creacionExito = true;
+        } catch (AssertionError error){
+            creacionExito = false;
+        }
+        assertEquals(true, creacionExito);
     }
 
-    @Test
-    public void asignarTaxiCreado(){
-        Taxi taxi = new Taxi("aaaaa","bbbbbb",1);
-        boolean estado = this.conductor.asignarUnTaxi(taxi);
-        assertEquals(true,estado);
-    }
 
-    @Test
-    public void asignarTaxiNoCreado(){
-        Taxi taxi = null;
-        boolean estado = this.conductorPrueba.asignarUnTaxi(taxi);
-        assertEquals(false,estado);
-    }
-    @Test
-    public void verificarCedulaValida(){
-        Conductor conductor= new Conductor("prueba Conductor", "0987654321");
-        boolean validez = conductor.verificarCedula();
-        assertEquals(true, validez);
-    }
-    @Test
-    public void verificarCedulaValid1(){
-        Conductor conductor= new Conductor("prueba Conductor", "9987654321");
-        boolean validez = conductor.verificarCedula();
-        assertEquals(false, validez);
-    }
 
-    @Test
-    public void verificarCedulaInalida2(){
-        Conductor conductor= new Conductor("prueba Conductor", "0654321");
-        boolean validez = conductor.verificarCedula();
-        assertEquals(false, validez);
-    }
+
+
 
 }
