@@ -20,6 +20,16 @@ public class ConductorTest {
     }
 
     @Test
+    public void ConductorAsignarTaxiFailTets(){
+        String nombre = "Juan";
+        String cedula = "0846456406";
+        Conductor conductor = new Conductor(nombre, cedula);
+        Taxi taxi = null;
+        assertEquals(false, conductor.asignarUnTaxi(taxi));
+    }
+
+
+    @Test
     public void ConductorVerificarCedulaTets(){
         String nombre = "Juan";
         String cedula = "0846456406";
@@ -31,6 +41,14 @@ public class ConductorTest {
     public void ConductorVerificarCedulaFalseTets(){
         String nombre = "Juan";
         String cedula = "08464406";
+        Conductor conductor = new Conductor(nombre, cedula);
+        assertEquals(false, conductor.verificarCedula());
+    }
+
+    @Test
+    public void ConductorVerificarCedulaFalseCeroTets(){
+        String nombre = "Juan";
+        String cedula = "4846440615";
         Conductor conductor = new Conductor(nombre, cedula);
         assertEquals(false, conductor.verificarCedula());
     }

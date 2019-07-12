@@ -1,0 +1,38 @@
+idioma : android
+jdk : oraclejdk8
+env :
+  global :
+    - ANDROID_API_LEVEL = 25
+    - ANDROID_BUILD_TOOLS_VERSION = 25.0.0
+Android :
+  licencias :
+    - ' android-sdk-preview-license -. + '
+    - ' Android-sdk-license -. + '
+    - ' google-gdk-license -. + '
+  componentes :
+    - herramientas
+    - herramientas
+    - plataforma-herramientas
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - Herramientas de construcción-25.0.0
+    - android-22
+    - sys-img-armeabi-v7a-android-22
+
+
+antes_instalar :
+  - si | sdkmanager "plataformas; android-27"
+  - si | sdkmanager "plataformas; android-28"
+
+antes_script :
+  - eco no | android crear avd --force -n test -t android-22 --abi armeabi-v7a
+  - emulador -avd prueba -no-audio -no-ventana &
+  - android-wait-for-emulator
+  - entrada de teclado adb keyevent 82 &
+
+guión :
+  - ./gradlew build jacocoTestReport assembleAndroidTest
+
+after_success :
+  - bash <(curl -s https://codecov.io/bash)
