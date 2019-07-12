@@ -11,14 +11,14 @@ import static junit.framework.TestCase.assertTrue;
 
 public class ConductorTest {
 
-    Taxi taxiprueba = null;
+    Taxi taxi = null;
     Conductor conductor=null;
     Ubicacion ubicacion1=null;
 
 
     @Before
     public void Pruebasconductor(){
-        taxiprueba = new Taxi("GOV456","CHEVROLET",12);
+        taxi = new Taxi("GOV456","CHEVROLET",12);
         conductor =new Conductor("Daniel Fernando Saigua Labre","0952475688");
 
 
@@ -45,5 +45,10 @@ public class ConductorTest {
         assertTrue(valorcorrecto);
     }
 
+    @Test
+    public void asignarTaxi(){
+        boolean valor = conductor.asignarUnTaxi(taxi);
+        assertEquals(true,valor);
+    }
 
 }
