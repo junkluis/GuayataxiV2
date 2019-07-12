@@ -38,17 +38,7 @@ public class ClienteTest {
         assertEquals(true, creacionExito);
     }
 
-    @Test
-    public void crearubicacion(){
-        boolean creacionExito = false;
-        try{
-            Ubicacion ubicacion1 = new Ubicacion(2.0f,2.2f,4.9f);
-            creacionExito = true;
-        } catch (AssertionError error){
-            creacionExito = false;
-        }
-        assertEquals(true, creacionExito);
-    }
+
 
 
 
