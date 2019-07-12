@@ -28,7 +28,7 @@ public class ClienteTest {
     public void crearUnNuevoCliente(){
         boolean creacionExito = false;
         try{
-        	billeteraPrueba = new Billetera(1);
+            billeteraPrueba = new Billetera(1);
             clientePrueba = new Cliente("Sebastian Ramirez", "0954225447", billeteraPrueba);
             creacionExito = true;
         } catch (AssertionError error){
@@ -41,7 +41,7 @@ public class ClienteTest {
     public void crearUnaNuevaUbicacion(){
         boolean creacionExito = false;
         try{
-        	ubicacionPrueba = new Ubicacion(2.3456456, 2.3456456, 450.26);
+            ubicacionPrueba = new Ubicacion(2.3456456, 2.3456456, 450.26);
             creacionExito = true;
         } catch (AssertionError error){
             creacionExito = false;
