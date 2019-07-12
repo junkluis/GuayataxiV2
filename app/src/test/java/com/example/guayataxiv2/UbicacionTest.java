@@ -28,10 +28,10 @@ public class UbicacionTest {
 
     @Test
     public void preciocorrecto(){
-        String mensajeEsperado = "Se agregaron los fondos con exito";
+        float esperado=2;
         Ubicacion ubicacion =new Ubicacion(3.2f,4.6f,5.9f);
         float valorcorrecto = ubicacion.calcularPrecio();
-        assertEquals(mensajeEsperado,valorcorrecto);
+        assertEquals(esperado,valorcorrecto);
 
 
     }
