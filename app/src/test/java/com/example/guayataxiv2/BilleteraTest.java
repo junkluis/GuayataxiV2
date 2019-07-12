@@ -33,8 +33,7 @@ public class BilleteraTest {
         }
         assertEquals(true, creacionExito);
     }
-
-
+    
 
     @Test
     public void bloquearBilletera(){
