@@ -10,7 +10,8 @@ import static org.junit.Assert.*;
 public class ConductorTest {
     Conductor conductorPrueba = null;
     Conductor conductorSinTaxi = null;
-    
+
+    @Before
     public void iniciarPruebas() {
         conductorPrueba = new Conductor("Wellington Matinez", "4937276890");
         conductorSinTaxi = new Conductor("Clara Alcazar", "0955778979");

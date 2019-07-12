@@ -1,5 +1,6 @@
 package com.example.guayataxiv2;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,7 +9,8 @@ import guayataxi.Ubicacion;
 
 public class UbicacionTest {
   Ubicacion u1 = null, u2 = null, u3 = null, u4 = null;
-  
+
+  @Before
   public void iniciarPruebas() {
     u1 = new Ubicacion(4, 4, 4);
     u2 = new Ubicacion(340, 435, 34);

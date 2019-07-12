@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 public class ClienteTest {
     Cliente clientePrueba = null;
 
+    @Before
     public void iniciarPruebas() {
         Billetera billetera = new Billetera(1);
         clientePrueba = new Cliente("Mildred", "0934869211", billetera);

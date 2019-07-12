@@ -11,12 +11,11 @@ public class TaxiTest {
   
   Taxi taxiValido = null;
   Taxi taxiNoValido = null;
-  
+
+  @Before
   public void iniciarPruebas() {
     taxiValido = new Taxi("GCZ567", "Hiundai", 2);
     taxiNoValido = new Taxi("GCV653", "Renaul", 3);
-    
-
   }
 
   @Test
