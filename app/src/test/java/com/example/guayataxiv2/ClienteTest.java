@@ -35,11 +35,11 @@ public class ClienteTest {
     public void ubicarCasa() {
         boolean asignacionExitosa = false;
         //try {
-            clientePrueba.registrarCasa(33227, 3328217, 337226);
+            Ubicacion posicionCasa = clientePrueba.registrarCasa(33227, 3328217, 337226);
             asignacionExitosa = true;
         //}catch(AssertionError error) {
             //asignacionExitosa = false;
         //}
-        assertEquals(true, asignacionExitosa);
+        assertTrue(posicionCasa instanceof Ubicacion);
     }
 }
