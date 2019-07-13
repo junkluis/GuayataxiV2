@@ -3,6 +3,7 @@ package com.example.guayataxiv2;
 import org.junit.Before;
 import org.junit.Test;
 
+import guayataxi.Cliente;
 import guayataxi.Billetera;
 
 import static org.junit.Assert.*;
@@ -16,7 +17,7 @@ public class ClienteTest {
     public void iniciarPruebas() {
         clientePrueba = new Cliente("John Cuesta", "0806335896", billetera);
 
-        clientePrueba.registrarCasa(-2.125556, -79.846667, 52);
+        clientePrueba.registrarCasa(-2, -79, 52);
     }
 
     @Test
@@ -47,7 +48,7 @@ public class ClienteTest {
 
     @Test
     public void registrarNuevaCasa() {
-        clienteNuevo.registrarCasa(-3, -80, 60);
+        clientePrueba.registrarCasa(-3, -80, 60);
     }
 
 }
