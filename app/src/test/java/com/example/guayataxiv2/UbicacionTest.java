@@ -18,20 +18,20 @@ public class UbicacionTest {
     public void calcularPrecioUbicacionPrueba() {
         ubicacionPrueba.calcularPrecio();
     }
-
+/*
     @Test
     public void calcularPrecioUbicacionNull() {
         ubicacionNull.calcularPrecio();
     }
-
+*/
     @Test
     public void descripcionUbicacionPrueba() {
         ubicacionPrueba.setDescripcion("Ubicación de prueba");
     }
-
+/*
     @Test
     public void descripcionUbicacionNull() {
         ubicacionNull.setDescripcion("Ubicación nula");
     }
-
+*/
 }
