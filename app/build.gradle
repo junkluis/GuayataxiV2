@@ -35,11 +35,7 @@ jacocoAndroidUnitTestReport {
                  '**/*JavascriptBridge.class']
 }
 
-test {
-    reports {
-        junitXml.enabled = true
-    }
-}
+
 
 jacocoAndroidUnitTestReport {
     csv.enabled false
