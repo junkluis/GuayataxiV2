@@ -15,7 +15,7 @@ public class UbicacionTest {
     u1 = new Ubicacion(4, 4, 4);
     u2 = new Ubicacion(340, 435, 34);
     u3 = new Ubicacion(132, 12, 48);
-    u3 = new Ubicacion(12, 443, 67);
+    u4 = new Ubicacion(12, 443, 67);
     
     u1.setDescripcion("Guayaquil");
     u2.setDescripcion("Milagro");
