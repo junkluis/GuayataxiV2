@@ -18,7 +18,6 @@ public class BilleteraTest {
     public void iniciarPruebas(){
         billeteraPrueba = new Billetera(2);
         billeteraPrueba.agregarFondos(10);
-
         billeteraSinFondos = new Billetera(3);
     }
 
