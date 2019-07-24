@@ -31,7 +31,7 @@ public class UbicacionTest {
     r2 = u2.calcularPrecio();
     r3 = u3.calcularPrecio();
     r4 = u4.calcularPrecio();
-    
+    System.out.println("El resultado esperado de r1 es: " + r1);
     assertEquals(2, r1);
     assertEquals(5, r2);
     assertEquals(10, r3);
