@@ -13,7 +13,7 @@ public class UbicacionTest {
   @Before
   public void iniciarPruebas() {
     u1 = new Ubicacion(4, 4, 4);
-    u2 = new Ubicacion(340, 435, 34);
+    u2 = new Ubicacion(340, 435, 24);
     u3 = new Ubicacion(132, 12, 48);
     u4 = new Ubicacion(12, 443, 67);
     
@@ -31,10 +31,10 @@ public class UbicacionTest {
     r2 = u2.calcularPrecio();
     r3 = u3.calcularPrecio();
     r4 = u4.calcularPrecio();
-    System.out.println("El resultado esperado de r1 es: " + r1);
-    assertEquals(2, r1);
-    assertEquals(5, r2);
-    assertEquals(10, r3);
-    assertEquals(15, r4);
+
+    assertEquals(2, r1, 0);
+    assertEquals(5, r2, 0);
+    assertEquals(10, r3, 0);
+    assertEquals(15, r4, 0);
   }
 }

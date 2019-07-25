@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
 public class ConductorTest {
     Conductor conductorPrueba = null;
     Conductor conductorSinTaxi = null;
+    Conductor conductorSinPapeles = null;
 
     @Before
     public void iniciarPruebas() {
@@ -44,18 +45,15 @@ public class ConductorTest {
     }
 
     @Test
-    public void verificacionCed(Conductor conductor) {
+    public void verificacionCed() {
         boolean verificacion = false;
-        verificacion = conductor.verificarCedula();
+        conductorSinPapeles = new Conductor("Jose Alcivar", "02");
+        verificacion = conductorPrueba.verificarCedula();
+        assertEquals(false, verificacion);
+        verificacion = conductorSinTaxi.verificarCedula();
         assertEquals(true, verificacion);
-
+        verificacion = conductorSinPapeles.verificarCedula();
+        assertEquals(false, verificacion);
     }
 
-    @Test
-    public void verificarCedulaDeConductores() {
-        Conductor conductorSinPapeles = new Conductor("Jose Alcivar", "02");
-        verificacionCed(conductorPrueba);
-        verificacionCed(conductorSinTaxi);
-        verificacionCed(conductorSinPapeles);
-    }
 }
